@@ -1,0 +1,9 @@
+.cover-bg {
+  background-image: url("https://totaltools.com.bd/data1/images/totalbangladesh3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.overlay {
+  background-color: #0059ff6b;
+}
