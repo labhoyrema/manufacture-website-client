@@ -2,6 +2,7 @@ import React from "react";
 
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import Review from "../../Shared/Review";
 
 const AddReview = () => {
   const { register, handleSubmit } = useForm();
@@ -27,6 +28,14 @@ const AddReview = () => {
     <>
       <div className="max-w-7xl w-2/4 mx-auto px-2  sm:px-6 lg:px-8 pt-16 ">
         <form onSubmit={handleSubmit(onSubmit)}>
+          <input
+            type="name"
+            placeholder="Ratings"
+            {...register("name")}
+            class="input input-bordered input-error w-full max-w-xs"
+            required
+          />
+
           <input
             type="number"
             placeholder="Ratings"

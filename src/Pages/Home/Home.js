@@ -6,7 +6,7 @@ import Review from "../../Shared/Review";
 
 const Home = () => {
   const [products, setProduct] = useState([]);
-
+  const [review, setReview] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -75,11 +75,21 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mb-16">
-        <div className="mb-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div className="bg-white">
           <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-            <h2 className="text-4xl font-extrabold">Happy Clients</h2>
+            <div className="mb-16">
+              <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 ">
+                Clients Reviews
+              </h2>
+            </div>
+            <Review />
           </div>
+        </div>
+      </div>
+      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+        <div className="mb-12">
+          <h2 className="text-4xl font-extrabold">Happy Clients</h2>
         </div>
         <div class="stats stats-vertical lg:stats-horizontal shadow  ">
           <div class="stat w-72 text-center ">
